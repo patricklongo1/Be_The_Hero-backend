@@ -32,7 +32,7 @@ class OngController {
         uf
       });
 
-      return res.json({ id });
+      return res.json({ name, id });
     } catch (error) {
       return res.status(404).json({ message: "Bad Request" });
     }
